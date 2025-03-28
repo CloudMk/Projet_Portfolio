@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(66, 5, 63);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow-x: hidden;
+}
+.nav{
+    text-transform: uppercase;
+    position: fixed;
+    background-color: rgb(97, 97, 228);
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 10px 10px 15px black;
+}
+h3{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ul li{
+    margin-top: 12px !important;
+    list-style: none;
+}
+ul li a{
+    font-size: 18px;
+}
+.active,li:hover{
+    border-bottom:5px rgb(218, 218, 226) solid;
+    transition: 1s ease;
+    transform: scale(1.2);
+}
+.logo{
+    width: 15%;
+    transition: 0.7s all;
+}
+.logo:hover,.logo:active,.logo:focus{
+    transform: scale(1.5);
+    color: dodgerblue !important;
+}
+.logos:hover,.logos:active,.logos:focus{
+    transform: scale(1.1);
+}
+.main-container{
+    margin-top: 100px;
+}
+.animate{
+    color: rgb(30, 183, 210);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background: linear-gradient(to right rgb(62, 62, 109), rgb(97, 6, 97),rgb(62, 62, 109) );
+    backdrop-filter: blur(10px);
+    box-sizing: -10px 0 10px rgb(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+}
+@media(max-width:800px) {
+    .strartOneMobile{
+        display: none;
+    }
+}
+@media(min-width:800px) {
+    .barDeMenu{
+        display: none;
+    }
+}
+hr{
+    border-bottom: 5px rgb(8, 23, 231) solid;
+    width: 45px;
+    margin-left: 35px;
+}
+.box{
+    box-shadow: 10px 10px 15px black;
+}
+.textAnimate{
+    display: inline-block;
+    position: relative;
+    color: transparent !important;
+    -webkit-text-stroke: .7px dodgerblue;
+    animation: display-text 16s linear infinite;
+    animation-delay: calc(-4s * var(--animate));
+}
+@keyframes display-text {
+    25%, 100%{
+        display: none;
+    }
+}
+.textAnimate::before{
+    content: attr(data-text);
+    position: absolute;
+    width: 0;
+    border-right: 2px solid dodgerblue;
+    color: dodgerblue;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: fill-text 4s linear infinite;
+}
+@keyframes fill-text {
+    10%,100%{
+        width: 0;
+    }
+    70%, 90%{
+        width: 100%;
+    }
+}

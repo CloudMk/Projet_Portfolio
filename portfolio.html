@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myportfolio</title>
+    <link rel="stylesheet" href="assete/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assete/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <!------------------- The Barre of navigation  ------------------->
+        <div class="row nav">
+            <div class="col-md-4 col-xs-12 col-sm-12 text-center">
+                <h3 class="mt-3">Portfolio</h3>
+            </div>
+            <div class="col-md-7 col-xs-12 col-sm-12 text-center">
+                <ul class="inline-item float-end d-flex gap-4 fs-3 menu">
+                    <li class="barDeMenu" onclick=Showsidebar()><a href="#" class="text-white"><span class="fas fa-bars fs-1"></span></a></li>
+                    <li class="list-inline-item strartOneMobile"><a class="text-decoration-none text-white menu" href="acceuile.html">Acceuile</a></li>
+                    <li class="list-inline-item strartOneMobile"><a class="text-decoration-none text-white menu" href="usage.html">Usage</a></li>
+                    <li class="list-inline-item strartOneMobile"><a class="text-decoration-none text-white menu active" href="portfolio.html">Portifolio</a></li>
+                    <li class="list-inline-item strartOneMobile"><a class="text-decoration-none text-white menu" href="contact.html">Contact</a></li>
+                </ul>
+                <ul class="inline-item float-end fs-3 sidebar"> 
+                    <li onclick=HideSidebar()><a href="#" class="text-white"><span class="fas fa-close fs-1"></span></a></li>
+                    <li class="list-inline-item"><a class="text-decoration-none text-white" href="acceuile.html">Acceuile</a></li>
+                    <li class="list-inline-item"><a class="text-decoration-none text-white" href="usage.html">Usage</a></li>
+                    <li class="list-inline-item"><a class="text-decoration-none text-white active" href="portfolio.html">Portifolio</a></li>
+                    <li class="list-inline-item"><a class="text-decoration-none text-white" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-1"> </div>
+        </div>
+        <!------------------- The presentation of membre  ------------------->
+        <div class="main-container row d-flex justify-content-evenly text-white">
+            <div class="content col-md-5 col-xs-12 col-sm-12">
+                <h1>Your  <span class="animate">Portfolio</span></h1>
+                <h4 class="typewriter fw-bolder">Of 
+                    <span class="text-danger textAnimate" style="--animate: 4;" data-text="Game Development">Game Development</span>
+                    <span class="text-danger textAnimate" style="--animate: 3;" data-text="Fronted Development">Fronted Development</span>
+                    <span class="text-danger textAnimate" style="--animate: 2;" data-text="Web Development">Web Development</span>
+                    <span class="text-danger textAnimate" style="--animate: 1;" data-text="YouTuber">YouTuber</span>
+                </h4>
+                <p class="mt-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor,
+                     illum quam at ad repellat corrupti consequuntur minima 
+                    id aspernatur ab unde architecto explicabo eum soluta, sint dolorem sapiente laborum?
+                </p>
+                <div class="social-links d-flex gap-3">
+                    <a href="https://www.githuh.com"><span class="fab fa-github fs-1 text-white logo"></span></a>
+                    <a href="https://www.facebook.com"><span class="fab fa-facebook fs-1 text-white logo"></span></a>
+                    <a href="https://www.whatsapp.com"><span class="fab fa-whatsapp fs-1 text-white logo "></span></a>
+                    <a href="https://www.twitter.com"><span class="fab fa-twitter fs-1 text-white logo"></span></a>
+                </div>
+                <div class="btn btn-primary fs-3 rounded-3 mt-3"><a class="text-decoration-none text-white" href="https://www.google.com">Get Started</a></div>
+            </div>
+            <div class="image content col-md-5 col-xs-12 col-sm-12">
+                <img class="w-100 rounded-pill" src="hero-removebg-preview.gif" alt="">
+                <div class="row">
+                    <img class="col-md-2 logo " src="image/logo.png" alt="">
+                    <img class="col-md-2 logo" src="logo.png" alt="">
+                    <img class="col-md-2 logo" src="logo.png" alt="">
+                    <img class="col-md-2 logo" src="logo.png" alt="">
+                    <img class="col-md-2 logo" src="logo.png" alt="">
+                    <img class="col-md-2 logo" src="logo.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!---------------- Our Service --------------------->
+        <div class="row d-flex justify-content-evenly mt-5 text-white">
+            <div class="col-md-3 col-xs-12 col-sm-12 box">
+                <h1 class="text-uppercase">What we do?</h1>
+                <hr>
+                <p>La présente Politique de protection des données personnelles regroupe 
+                    dans un format clair, pédagogique et aisément accessible des informations
+                </p>
+            </div>
+            <div class="col-md-3 col-xs-12 col-sm-12 box">
+                <span class="fas fa-video fs-1  w-25 rounded-2 text-center"></span>
+                <h5 class="mt-4">Motions graphics</h5>
+                <p>La présente Politique de protection des données personnelles regroupe 
+                    dans un format clair, pédagogique et aisément accessible des informations
+                </p>
+            </div>
+            <div class="col-md-3 col-xs-12 col-sm-12 box">
+                <span class="fas fa-camera fs-1  w-25 rounded-2 text-center"></span>
+                <h5 class="mt-4">Scripting and Editing</h5>
+                <p>La présente Politique de protection des données personnelles regroupe 
+                    dans un format clair, pédagogique et aisément accessible des informations
+                </p>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-evenly mt-5 text-white">
+            <div class="col-md-3 col-xs-12 col-sm-12">
+                <h1 class="border-bottom w-25 text-center">All</h1>
+            </div>
+            <div class="col-md-3 col-xs-12 col-sm-12 box">
+                <span class="fas fa-laptop fs-1 rounded-pill ms-5"></span>
+                <h5 class="mt-4">Web Developpment</h5>
+                <p>La présente Politique de protection des données personnelles regroupe 
+                    dans un format clair, pédagogique et aisément accessible des informations
+                </p>
+            </div>
+            <div class="col-md-3 col-xs-12 col-sm-12 box">
+                <span class="fab fa-dev fs-1 w-25 rounded-2 text-center"></span>
+                <h5 class="mt-4">Web Service</h5>
+                <p>La présente Politique de protection des données personnelles regroupe 
+                    dans un format clair, pédagogique et aisément accessible des informations
+                </p>
+            </div>
+        </div>
+        <!----------------- our Develloppment --------------->
+        <h2 class="text-center mt-3 text-white">Our Service of Developpment</h2>
+        <div class="row text-white text-uppercase">
+            <div class="col-lg-12">
+                <ul class="d-flex justify-content-evenly ">
+                    <li class="border-bottom">All</li>
+                    <li >Web Service</li>
+                    <li>Game Developpment</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-evenly mt-5 text-white">
+            <div class="col-md-4 col-xs-12 col-sm-12 text-center">
+                <img class="logos" src="image/istockphoto-1286724306-1024x1024.jpg" width="100%"  height="80%" alt="">
+                <h5>Vip Auto Tire And Service</h5>
+            </div>
+            <div class="col-md-4 col-xs-12 col-sm-12 text-center">
+                <img class="logos" src="image/istockphoto-1350615984-1024x1024.jpg" width="100%"  height="80%" alt="">
+                <h5>Vip Auto Tire And Service</h5>
+            </div>
+            <div class="col-md-4 col-xs-12 col-sm-12 text-center">
+                <img class="logos" src="image/pexels-canvy-mockups-56805-205316.jpg" width="100%"  height="80%" alt="">
+                <h5>Vip Auto Tire And Service</h5>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-evenly mt-2 text-white">
+            <div class="col-md-4 col-xs-12 col-sm-12 text-center">
+                <img class="logos" src="image/pexels-mikael-blomkvist-6476588.jpg" width="100%" height="80%" alt="">
+                <h5>Vip Auto Tire And Service</h5>
+            </div>
+            <div class="col-md-4 col-xs-12 col-sm-12 text-center">
+                <img class="logos" src="image/istockphoto-1219863438-1024x1024.jpg" width="100%"  height="80%" alt="">
+                <h5>Vip Auto Tire And Service</h5>
+            </div>
+            <div class="col-md-4 col-xs-12 col-sm-12 text-center">
+                <img class="logos" src="image/pexels-julia-m-cameron-4145355.jpg" width="100%"  height="80%" alt="">
+                <h5>Vip Auto Tire And Service</h5>
+            </div>
+        </div>
+        <div class="text-center d-flex gap-4 justify-content-center">
+            <a href="#" class="text-decoration-none text-white"><span class="text-decoration-none text-white arrow_left"></span> Prev</a>
+            <a href="#" class="text-decoration-none text-white">1</a>
+            <a href="#" class="text-decoration-none text-white">2</a>
+            <a href="#" class="text-decoration-none text-white">Next <span class="arrow_right"></span></a>
+        </div>
+         <!-- the next section -->
+          <div class="text-uppercase text-center text-white mt-4">
+            <h5>Loved By Clients</h5>
+            <h3> What clients say?</h3>
+          </div>
+         <div class="text-center mt-4 text-white">
+            <div class="row d-flex justify-content-evenly mt-4">
+                <div class="col-md-2 col-xs-12 ">
+                    <div class="border-Rond logos"><span class="fas fa-calendar text-white fs-1 " ></span> </div>
+                    <h6>12+</h6>
+                    <h6>YEURS OF EXPERIENCE</h6>
+                </div>
+                <div class="col-md-2 col-xs-12">
+                    <div class="border-Rond logos"><span class="fas fa-check  text-white fs-1"></span></div>
+                    <h6>999+</h6>
+                    <h6>COMPLETED PROJETS</h6>
+                </div>
+                <div class="col-md-2 col-xs-12">
+                    <div class="border-Rond logos"><span class="fas fa-users  text-white fs-1"></span></div>
+                    <h6>480+</h6>
+                    <h6>TOTAL CLIENT</h6>
+                </div>
+                <div class="col-md-2 col-xs-12">
+                    <div class="border-Rond logos"><span class="fas fa-heart  text-white fs-1"></span></div>
+                    <h6>15+</h6>
+                    <h6>AWARD WON</h6>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+    <footer class="footer text-white mt-5">
+        <div class="container">
+            <div class="footer__top">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__top__logo">
+                            <a href="#"><img src="img/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__top__social">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-dribbble"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__option">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div>
+                            <h5>About us</h5>
+                            <p>Formed in 2006 by Matt Hobbs and Cael Jones, web service is an award-winning, full-service
+                                production company specializing.</p>
+                            <a href="#" class="text-decoration-none">Read more</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3">
+                        <div>
+                            <h5>Who we are</h5>
+                            <ul class="inline-item">
+                                <li class="list-inline-item"><a class="text-decoration-none " href="#">Our page</a></li>
+                                <li class="list-inline-item"><a class="text-decoration-none " href="#">Our Service</a></li>
+                                <li class="list-inline-item"><a class="text-decoration-none " href="#">Developpment</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3">
+                        <div>
+                            <h5>Our work</h5>
+                            <ul class="inline-item">
+                                <li class="list-inline-item"><a class="text-decoration-none " href="#">acceuille</a></li>
+                                <li class="list-inline-item"><a class="text-decoration-none " href="#">Usage</a></li>
+                                <li class="list-inline-item"><a class="text-decoration-none " href="#">Portfolio</a></li>
+                                <li class="list-inline-item"><a class="text-decoration-none " href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div>
+                            <h5>Newsletter</h5>
+                            <p>web service is an award-winning, full-service production company specializing.</p>
+                            <form action="#">
+                                <input type="text" placeholder="Email">
+                                <button type="submit" class="border-none">Envoyer</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <p class="">Copyright &copy;
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>
+                            All rights reserved | This template is made with <i class="fa fa-heart-o"
+                                aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </footer>
+    </div>
+    <script src="assete/script.js"></script>
+</body>
+</html>
